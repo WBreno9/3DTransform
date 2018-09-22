@@ -16,46 +16,41 @@ intrinsics and memory layout. Although SIMD is not really used in this instance,
 fact that the vectors are an SSE type they can be used to do all kinds of vector 
 processing before the matrix transformations.
 
----
 
-## Model transformations
+# Model transformations
 There is **translation**, **scale** and **rotation** on the 3 basis vectors.
 
-### Translation 
+## Translation 
 
-#### Translate X
+### Translate X
 ![translation_x](results/translate_x.gif)
 
-#### Translate Y
+### Translate Y
 ![translation_y](results/translate_y.gif)
 
-#### Translate Z
+### Translate Z
 ![translation_z](results/translate_z.gif)
 
----
+## Scale
 
-### Scale
-
-#### Scale X
+### Scale X
 ![scale_x](results/scale_x.gif)
 
-#### Scale Y
+### Scale Y
 ![scale_y](results/scale_y.gif)
 
-#### Scale Z
+### Scale Z
 ![scale_z](results/scale_z.gif)
 
----
+## Rotation
 
-### Rotation
-
-#### Rotate X
+### Rotate X
 ![rotate_x](results/rotate_x.gif)
 
-#### Rotate Y
+### Rotate Y
 ![rotate_y](results/rotate_y.gif)
 
-#### Rotate Z
+### Rotate Z
 ![rotate_z](results/rotate_z.gif)
 
 ---
@@ -73,7 +68,7 @@ aspect ratio, near and far planes.
 
 ---
 
-## More examples
+# More examples
 
 Examples with (almost) everything in action. 
 
