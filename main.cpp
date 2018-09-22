@@ -68,7 +68,7 @@ void MyGlDraw(void)
     mat4 ss;
 
     perspective(proj, 45.f, IMAGE_WIDTH/(float)IMAGE_HEIGHT, 0.1f, 100.f);
-    look_at(vec4_set(3*t, 2*t, 6, 1.f),
+    look_at(vec4_set(3 + -3*t, 1, 1+ t, 1.f),
             vec4_set(0.f, 0.f, 0.f, 1.f),
             vec4_set(0.f, 1.f, 0.f, 0.f),
             view);
@@ -76,8 +76,18 @@ void MyGlDraw(void)
 
     mat4_identity(m);
 
-    mat4_scale(vec4_set(t, t, t, 1.f), m);
+    //mat4_scale(vec4_set(1, 1, t, 1.f), m);
+    //mat4_scale(vec4_set(1, t, 1, 1.f), m);
+    //mat4_translate(vec4_set(0, -0.8, 0, 1.f), m);
+    //mat4_scale(vec4_set(0.3f, 0.3f, 0.3f, 1.f), m);
     mat4_rotate(-t/2, t, 0, m);
+    
+    //mat4_rotate_x(t, m);
+    //mat4_rotate_y(t, m);
+    //mat4_rotate_z(t, m);
+    
+    //mat4_translate(vec4_set(0, t, 0, 1.f), m);
+    //mat4_translate(vec4_set(t, 0, 0, 1.f), m);
 
     mat4_mul(view, m, m);
     mat4_mul(proj, m, m);
